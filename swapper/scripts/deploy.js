@@ -1,9 +1,9 @@
 
 async function main() {
   const payableAmount = ethers.parseEther("0.003");
-  const ethlimit = ethers.parseEther("0.001");
-  const tokenlimit = ethers.parseEther("1");
-  const swap = await hre.ethers.deployContract("Swap", ["0x655F2166b0709cd575202630952D71E2bB0d61Af", `${ethlimit}`, `${tokenlimit}`], {
+  const ethlimit = ethers.parseEther("0.001"); // limit t0 recieve ETH
+  const tokenlimit = ethers.parseEther("1"); // limit to send Tokens
+  const swap = await hre.ethers.deployContract("Swap", ["", `${ethlimit}`, `${tokenlimit}`], {
     value: payableAmount,
   });
 
