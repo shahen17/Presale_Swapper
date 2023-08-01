@@ -1,13 +1,9 @@
-# Sample Hardhat Project
+# Presale_swapper Smart Contract (Hardhat-Project)
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project demonstrates a ERC20 token swapper smart contract, Users who are in the presale list can send Eth to the smart contract and recieve equivalent ERC20 tokens back to their wallet address. 
 
 Try running some of the following tasks:
 
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
+npx hardhat run scripts/deploy.js --network goerli
 ```
